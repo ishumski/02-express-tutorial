@@ -3,6 +3,8 @@ const express = require('express')
 const app = express()
 const PORT = 5001
 
+//req => middleware => res
+
 const loggerMiddleware = (req, res, next)=>{
     const method = req.method
     const url = req.url
